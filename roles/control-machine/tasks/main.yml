@@ -1,0 +1,17 @@
+---
+# tasks file for control-machine
+#
+
+- name: install control machine dependencies
+  yum:
+          name: "{{ item }}"
+          state: present
+  with_items:
+          - "@Development tools"
+          - python-devel
+          - krb5-devel
+          - krb5-libs
+          - krb5-workstation
+          - python2-winrm
+          - python2-kerberos
+          - python-azure
