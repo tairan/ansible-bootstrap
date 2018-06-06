@@ -13,5 +13,5 @@
           - krb5-libs
           - krb5-workstation
           - python2-winrm
-          - python2-kerberos
-          - python-azure
+          - python-kerberos
+          - python-azure-sdk
